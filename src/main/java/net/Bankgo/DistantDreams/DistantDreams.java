@@ -25,6 +25,7 @@ public class DistantDreams
 {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "distantdreams";
+
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -36,13 +37,17 @@ public class DistantDreams
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        // Register the creative mode tabs
         ModCreativeModeTabs.register(modEventBus);
 
+        // Register the mod items
         ModItems.register(modEventBus);
+
+        // Register the mod blocks
         ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
+        // modEventBus.addListener(this::addCreative);
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }

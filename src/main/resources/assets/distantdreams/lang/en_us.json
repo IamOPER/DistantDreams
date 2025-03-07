@@ -1,8 +1,13 @@
 {
-  "item.distantdreams.dreamcatcher": "Dream Catcher",
-  "item.distantdreams.redwood": "Redwood",
-
   "block.distantdreams.eucalyptus_planks": "Eucalyptus Planks",
+  "block.distantdreams.eucalyptus_stairs": "Eucalyptus Stairs",
+  "block.distantdreams.eucalyptus_slab": "Eucalyptus Slab",
+  "block.distantdreams.eucalyptus_pressure_plate": "Eucalyptus Pressure Plate",
+  "block.distantdreams.eucalyptus_button": "Eucalyptus Button",
+  "block.distantdreams.eucalyptus_fence": "Eucalyptus Fence",
+  "block.distantdreams.eucalyptus_fence_gate": "Eucalyptus Fence Gate",
+  "block.distantdreams.eucalyptus_door": "Eucalyptus Door",
+  "block.distantdreams.eucalyptus_trapdoor": "Eucalyptus Trapdoor",
   "block.distantdreams.eucalyptus_leaves": "Eucalyptus Leaves",
 
   "creativetab.distantdreams.distant_dreams_tab": "Distant Dreams"
