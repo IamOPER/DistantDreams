@@ -29,6 +29,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.EUCALYPTUS_DOOR.get());
                         output.accept(ModBlocks.EUCALYPTUS_TRAPDOOR.get());
                         output.accept(ModBlocks.EUCALYPTUS_LEAVES.get());
+                        output.accept(ModBlocks.SEQUOIA_PLANKS.get());
+                        output.accept(ModBlocks.SEQUOIA_STAIRS.get());
+                        output.accept(ModBlocks.SEQUOIA_SLAB.get());
+                        output.accept(ModBlocks.SEQUOIA_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.SEQUOIA_BUTTON.get());
+                        output.accept(ModBlocks.SEQUOIA_FENCE.get());
+                        output.accept(ModBlocks.SEQUOIA_FENCE_GATE.get());
+                        output.accept(ModBlocks.SEQUOIA_DOOR.get());
+                        output.accept(ModBlocks.SEQUOIA_TRAPDOOR.get());
+                        output.accept(ModBlocks.SEQUOIA_LEAVES.get());
                         output.accept(ModItems.DREAMCATCHER.get());
                         output.accept(ModItems.REDWOOD.get());
                     }).build());

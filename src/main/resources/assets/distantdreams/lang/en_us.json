@@ -10,5 +10,16 @@
   "block.distantdreams.eucalyptus_trapdoor": "Eucalyptus Trapdoor",
   "block.distantdreams.eucalyptus_leaves": "Eucalyptus Leaves",
 
+  "block.distantdreams.sequoia_planks": "Sequoia Planks",
+  "block.distantdreams.sequoia_stairs": "Sequoia Stairs",
+  "block.distantdreams.sequoia_slab": "Sequoia Slab",
+  "block.distantdreams.sequoia_pressure_plate": "Sequoia Pressure Plate",
+  "block.distantdreams.sequoia_button": "Sequoia Button",
+  "block.distantdreams.sequoia_fence": "Sequoia Fence",
+  "block.distantdreams.sequoia_fence_gate": "Sequoia Fence Gate",
+  "block.distantdreams.sequoia_door": "Sequoia Door",
+  "block.distantdreams.sequoia_trapdoor": "Sequoia Trapdoor",
+  "block.distantdreams.sequoia_leaves": "Sequoia Leaves",
+
   "creativetab.distantdreams.distant_dreams_tab": "Distant Dreams"
 }

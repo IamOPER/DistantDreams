@@ -17,6 +17,7 @@ import java.awt.*;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+    // Registry for mod blocks
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, DistantDreams.MODID);
 
@@ -41,7 +42,7 @@ public class ModBlocks {
     // Eucalyptus Button
     public static final RegistryObject<ButtonBlock> EUCALYPTUS_BUTTON = registerBlock("eucalyptus_button",
             () -> new ButtonBlock(BlockSetType.OAK,
-                    5,
+                    15,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
 
     // Eucalyptus Fence
@@ -65,6 +66,56 @@ public class ModBlocks {
 
     // Eucalyptus Leaves
     public static final RegistryObject<Block> EUCALYPTUS_LEAVES = registerBlock("eucalyptus_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)
+                    .noOcclusion()
+                    .isSuffocating((state, world, pos) -> false)
+                    .isViewBlocking((state, world, pos) -> false)));
+
+    // Sequoia Planks
+    public static final RegistryObject<Block> SEQUOIA_PLANKS = registerBlock("sequoia_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+
+    // Sequoia Stairs
+    public static final RegistryObject<StairBlock> SEQUOIA_STAIRS = registerBlock("sequoia_stairs",
+            () -> new StairBlock(ModBlocks.SEQUOIA_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
+
+    // Sequoia Slab
+    public static final RegistryObject<SlabBlock> SEQUOIA_SLAB = registerBlock("sequoia_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
+
+    // Sequoia Pressure Plate
+    public static final RegistryObject<PressurePlateBlock> SEQUOIA_PRESSURE_PLATE = registerBlock("sequoia_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
+
+    // Sequoia Button
+    public static final RegistryObject<ButtonBlock> SEQUOIA_BUTTON = registerBlock("sequoia_button",
+            () -> new ButtonBlock(BlockSetType.OAK,
+                    15,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
+
+    // Sequoia Fence
+    public static final RegistryObject<FenceBlock> SEQUOIA_FENCE = registerBlock("sequoia_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
+
+    // Sequoia Fence Gate
+    public static final RegistryObject<FenceGateBlock> SEQUOIA_FENCE_GATE = registerBlock("sequoia_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE)));
+
+    // Sequoia Door
+    public static final RegistryObject<DoorBlock> SEQUOIA_DOOR = registerBlock("sequoia_door",
+            () -> new DoorBlock(BlockSetType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
+
+    // Sequoia Trapdoor
+    public static final RegistryObject<TrapDoorBlock> SEQUOIA_TRAPDOOR = registerBlock("sequoia_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
+
+    // Sequoia Leaves
+    public static final RegistryObject<Block> SEQUOIA_LEAVES = registerBlock("sequoia_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)
                     .noOcclusion()
                     .isSuffocating((state, world, pos) -> false)

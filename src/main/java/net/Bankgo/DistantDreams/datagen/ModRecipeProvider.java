@@ -7,6 +7,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
 
@@ -19,40 +20,92 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput pRecipeOutput) {
-        // Eucalyptus Stair Recipe
-        stairBuilder(ModBlocks.EUCALYPTUS_STAIRS.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS.get()))
-                .group("eucalyptus")
-                .unlockedBy(getHasName(ModBlocks.EUCALYPTUS_PLANKS.get()), has(ModBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+        // Generate all eucalyptus wood recipes
+        woodRecipes(
+                pRecipeOutput,
+                ModBlocks.EUCALYPTUS_PLANKS.get(),
+                ModBlocks.EUCALYPTUS_STAIRS.get(),
+                ModBlocks.EUCALYPTUS_SLAB.get(),
+                ModBlocks.EUCALYPTUS_PRESSURE_PLATE.get(),
+                ModBlocks.EUCALYPTUS_BUTTON.get(),
+                ModBlocks.EUCALYPTUS_FENCE.get(),
+                ModBlocks.EUCALYPTUS_FENCE_GATE.get(),
+                ModBlocks.EUCALYPTUS_DOOR.get(),
+                ModBlocks.EUCALYPTUS_TRAPDOOR.get(),
+                "eucalyptus"
+        );
 
-        // Eucalyptus Slab Recipe
-        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EUCALYPTUS_SLAB.get(), ModBlocks.EUCALYPTUS_PLANKS.get());
+        // Generate all sequoia wood recipes
+        woodRecipes(
+                pRecipeOutput,
+                ModBlocks.SEQUOIA_PLANKS.get(),
+                ModBlocks.SEQUOIA_STAIRS.get(),
+                ModBlocks.SEQUOIA_SLAB.get(),
+                ModBlocks.SEQUOIA_PRESSURE_PLATE.get(),
+                ModBlocks.SEQUOIA_BUTTON.get(),
+                ModBlocks.SEQUOIA_FENCE.get(),
+                ModBlocks.SEQUOIA_FENCE_GATE.get(),
+                ModBlocks.SEQUOIA_DOOR.get(),
+                ModBlocks.SEQUOIA_TRAPDOOR.get(),
+                "sequoia"
+        );
+    }
 
-        // Eucalyptus Button Recipe
-        buttonBuilder(ModBlocks.EUCALYPTUS_BUTTON.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS.get()))
-                .group("eucalyptus")
-                .unlockedBy(getHasName(ModBlocks.EUCALYPTUS_PLANKS.get()), has(ModBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+    private void woodRecipes(RecipeOutput pRecipeOutput,
+                             Block planks,
+                             Block stairs,
+                             Block slab,
+                             Block pressurePlate,
+                             Block button,
+                             Block fence,
+                             Block fenceGate,
+                             Block door,
+                             Block trapdoor,
+                             String groupName) {
 
-        // Eucalyptus Pressure Plate Recipe
-        pressurePlate(pRecipeOutput, ModBlocks.EUCALYPTUS_PRESSURE_PLATE.get(), ModBlocks.EUCALYPTUS_PLANKS.get());
+        // Ingredient for the planks
+        Ingredient planksIngredient = Ingredient.of(planks);
 
-        // Eucalyptus Fence Recipe
-        fenceBuilder(ModBlocks.EUCALYPTUS_FENCE.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS.get()))
-                .group("eucalyptus")
-                .unlockedBy(getHasName(ModBlocks.EUCALYPTUS_PLANKS.get()), has(ModBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+        // Stairs Recipe
+        stairBuilder(stairs, planksIngredient)
+                .group(groupName)
+                .unlockedBy(getHasName(planks), has(planks))
+                .save(pRecipeOutput);
 
-        // Eucalyptus Fence Gate Recipe
-        fenceGateBuilder(ModBlocks.EUCALYPTUS_FENCE_GATE.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS.get()))
-                .group("eucalyptus")
-                .unlockedBy(getHasName(ModBlocks.EUCALYPTUS_PLANKS.get()), has(ModBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+        // Slab Recipe
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, slab, planks);
 
-        // Eucalyptus Door Recipe
-        doorBuilder(ModBlocks.EUCALYPTUS_DOOR.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS.get()))
-                .group("eucalyptus")
-                .unlockedBy(getHasName(ModBlocks.EUCALYPTUS_PLANKS.get()), has(ModBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+        // Button Recipe
+        buttonBuilder(button, planksIngredient)
+                .group(groupName)
+                .unlockedBy(getHasName(planks), has(planks))
+                .save(pRecipeOutput);
 
-        // Eucalyptus Trapdoor Recipe
-        trapdoorBuilder(ModBlocks.EUCALYPTUS_TRAPDOOR.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS.get()))
-                .group("eucalyptus")
-                .unlockedBy(getHasName(ModBlocks.EUCALYPTUS_PLANKS.get()), has(ModBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+        // Pressure Plate Recipe
+        pressurePlate(pRecipeOutput, pressurePlate, planks);
+
+        // Fence Recipe
+        fenceBuilder(fence, planksIngredient)
+                .group(groupName)
+                .unlockedBy(getHasName(planks), has(planks))
+                .save(pRecipeOutput);
+
+        // Fence Gate Recipe
+        fenceGateBuilder(fenceGate, planksIngredient)
+                .group(groupName)
+                .unlockedBy(getHasName(planks), has(planks))
+                .save(pRecipeOutput);
+
+        // Door Recipe
+        doorBuilder(door, planksIngredient)
+                .group(groupName)
+                .unlockedBy(getHasName(planks), has(planks))
+                .save(pRecipeOutput);
+
+        // Trapdoor Recipe
+        trapdoorBuilder(trapdoor, planksIngredient)
+                .group(groupName)
+                .unlockedBy(getHasName(planks), has(planks))
+                .save(pRecipeOutput);
     }
 }

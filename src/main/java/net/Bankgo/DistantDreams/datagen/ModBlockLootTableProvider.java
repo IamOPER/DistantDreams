@@ -37,6 +37,20 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.EUCALYPTUS_LEAVES.get(),
                 block -> createLeavesDrops(block, Blocks.OAK_LEAVES, NORMAL_LEAVES_SAPLING_CHANCES));
 
+        dropSelf(ModBlocks.SEQUOIA_PLANKS.get());
+        dropSelf(ModBlocks.SEQUOIA_STAIRS.get());
+        this.add(ModBlocks.SEQUOIA_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SEQUOIA_SLAB.get()));
+        dropSelf(ModBlocks.SEQUOIA_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.SEQUOIA_BUTTON.get());
+        dropSelf(ModBlocks.SEQUOIA_FENCE.get());
+        dropSelf(ModBlocks.SEQUOIA_FENCE_GATE.get());
+        this.add(ModBlocks.SEQUOIA_DOOR.get(),
+                block -> createDoorTable(ModBlocks.SEQUOIA_DOOR.get()));
+        dropSelf(ModBlocks.SEQUOIA_TRAPDOOR.get());
+        this.add(ModBlocks.SEQUOIA_LEAVES.get(),
+                block -> createLeavesDrops(block, Blocks.OAK_LEAVES, NORMAL_LEAVES_SAPLING_CHANCES));
+
     }
 
     @Override

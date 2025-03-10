@@ -23,10 +23,17 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         // basicItem(ModItems.DREAMCATCHER.get());
 
+        // Button Item
         buttonItem(ModBlocks.EUCALYPTUS_BUTTON, ModBlocks.EUCALYPTUS_PLANKS);
-        fenceItem(ModBlocks.EUCALYPTUS_FENCE, ModBlocks.EUCALYPTUS_PLANKS);
+        buttonItem(ModBlocks.SEQUOIA_BUTTON, ModBlocks.SEQUOIA_PLANKS);
 
+        // Fence Item
+        fenceItem(ModBlocks.EUCALYPTUS_FENCE, ModBlocks.EUCALYPTUS_PLANKS);
+        fenceItem(ModBlocks.SEQUOIA_FENCE, ModBlocks.SEQUOIA_PLANKS);
+
+        // Door Item
         simpleBlockItem(ModBlocks.EUCALYPTUS_DOOR);
+        simpleBlockItem(ModBlocks.SEQUOIA_DOOR);
     }
 
     public void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
