@@ -23,6 +23,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        dropSelf(ModBlocks.EUCALYPTUS_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_EUCALYPTUS_LOG.get());
+        dropSelf(ModBlocks.EUCALYPTUS_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_EUCALYPTUS_WOOD.get());
         dropSelf(ModBlocks.EUCALYPTUS_PLANKS.get());
         dropSelf(ModBlocks.EUCALYPTUS_STAIRS.get());
         this.add(ModBlocks.EUCALYPTUS_SLAB.get(),
@@ -37,6 +41,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.EUCALYPTUS_LEAVES.get(),
                 block -> createLeavesDrops(block, Blocks.OAK_LEAVES, NORMAL_LEAVES_SAPLING_CHANCES));
 
+        dropSelf(ModBlocks.SEQUOIA_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_SEQUOIA_LOG.get());
+        dropSelf(ModBlocks.SEQUOIA_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_SEQUOIA_WOOD.get());
         dropSelf(ModBlocks.SEQUOIA_PLANKS.get());
         dropSelf(ModBlocks.SEQUOIA_STAIRS.get());
         this.add(ModBlocks.SEQUOIA_SLAB.get(),

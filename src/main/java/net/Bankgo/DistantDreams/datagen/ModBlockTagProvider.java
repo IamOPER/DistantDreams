@@ -27,6 +27,30 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         // Block tags for wood
+        tag(BlockTags.LOGS)
+                .add(ModBlocks.EUCALYPTUS_LOG.get())
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_LOG.get())
+                .add(ModBlocks.EUCALYPTUS_WOOD.get())
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_WOOD.get())
+                .add(ModBlocks.SEQUOIA_LOG.get())
+                .add(ModBlocks.STRIPPED_SEQUOIA_LOG.get())
+                .add(ModBlocks.SEQUOIA_WOOD.get())
+                .add(ModBlocks.STRIPPED_SEQUOIA_WOOD.get());
+
+        tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.EUCALYPTUS_LOG.get())
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_LOG.get())
+                .add(ModBlocks.EUCALYPTUS_WOOD.get())
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_WOOD.get())
+                .add(ModBlocks.SEQUOIA_LOG.get())
+                .add(ModBlocks.STRIPPED_SEQUOIA_LOG.get())
+                .add(ModBlocks.SEQUOIA_WOOD.get())
+                .add(ModBlocks.STRIPPED_SEQUOIA_WOOD.get());
+
+        tag(BlockTags.OVERWORLD_NATURAL_LOGS)
+                .add(ModBlocks.EUCALYPTUS_LOG.get())
+                .add(ModBlocks.SEQUOIA_LOG.get());
+
         tag(BlockTags.PLANKS)
                 .add(ModBlocks.EUCALYPTUS_PLANKS.get())
                 .add(ModBlocks.SEQUOIA_PLANKS.get());
@@ -62,6 +86,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.EUCALYPTUS_TRAPDOOR.get())
                 .add(ModBlocks.SEQUOIA_TRAPDOOR.get());
+
+        tag(BlockTags.LEAVES)
+                .add(ModBlocks.EUCALYPTUS_LEAVES.get())
+                .add(ModBlocks.SEQUOIA_LEAVES.get());
+
 
 
         // Block tags for stone

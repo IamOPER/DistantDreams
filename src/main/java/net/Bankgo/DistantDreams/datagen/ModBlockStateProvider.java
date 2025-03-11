@@ -4,6 +4,7 @@ import net.Bankgo.DistantDreams.DistantDreams;
 import net.Bankgo.DistantDreams.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -25,6 +26,30 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.EUCALYPTUS_LEAVES);
         blockWithItem(ModBlocks.SEQUOIA_PLANKS);
         blockWithItem(ModBlocks.SEQUOIA_LEAVES);
+
+        // Wood log blocks
+        logBlock((RotatedPillarBlock) ModBlocks.EUCALYPTUS_LOG.get());
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_EUCALYPTUS_LOG.get(),
+                modLoc("block/stripped_eucalyptus_log"),
+                modLoc("block/stripped_eucalyptus_log_top"));
+        logBlock((RotatedPillarBlock) ModBlocks.SEQUOIA_LOG.get());
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_SEQUOIA_LOG.get(),
+                modLoc("block/stripped_sequoia_log"),
+                modLoc("block/stripped_sequoia_log_top"));
+
+        // Wood blocks
+        axisBlock((RotatedPillarBlock) ModBlocks.EUCALYPTUS_WOOD.get(),
+                modLoc("block/eucalyptus_log"),
+                modLoc("block/eucalyptus_log"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_EUCALYPTUS_WOOD.get(),
+                modLoc("block/stripped_eucalyptus_log"),
+                modLoc("block/stripped_eucalyptus_log"));
+        axisBlock((RotatedPillarBlock) ModBlocks.SEQUOIA_WOOD.get(),
+                modLoc("block/sequoia_log"),
+                modLoc("block/sequoia_log"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_SEQUOIA_WOOD.get(),
+                modLoc("block/stripped_sequoia_log"),
+                modLoc("block/stripped_sequoia_log"));
 
         // Stair Blocks
         stairsBlock(ModBlocks.EUCALYPTUS_STAIRS.get(), blockTexture(ModBlocks.EUCALYPTUS_PLANKS.get()));
@@ -59,12 +84,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(ModBlocks.SEQUOIA_TRAPDOOR.get(), modLoc("block/sequoia_trapdoor"), true, "cutout");
 
         // Non-standard Block Items
+        blockItem(ModBlocks.EUCALYPTUS_LOG);
+        blockItem(ModBlocks.STRIPPED_EUCALYPTUS_LOG);
+        blockItem(ModBlocks.EUCALYPTUS_WOOD);
+        blockItem(ModBlocks.STRIPPED_EUCALYPTUS_WOOD);
         blockItem(ModBlocks.EUCALYPTUS_STAIRS);
         blockItem(ModBlocks.EUCALYPTUS_SLAB);
         blockItem(ModBlocks.EUCALYPTUS_PRESSURE_PLATE);
         blockItem(ModBlocks.EUCALYPTUS_FENCE_GATE);
         blockItem(ModBlocks.EUCALYPTUS_TRAPDOOR, "_bottom");
 
+        blockItem(ModBlocks.SEQUOIA_LOG);
+        blockItem(ModBlocks.STRIPPED_SEQUOIA_LOG);
+        blockItem(ModBlocks.SEQUOIA_WOOD);
+        blockItem(ModBlocks.STRIPPED_SEQUOIA_WOOD);
         blockItem(ModBlocks.SEQUOIA_STAIRS);
         blockItem(ModBlocks.SEQUOIA_SLAB);
         blockItem(ModBlocks.SEQUOIA_PRESSURE_PLATE);

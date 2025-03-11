@@ -19,6 +19,10 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.EUCALYPTUS_PLANKS.get()))
                     .title(Component.translatable("creativetab.distantdreams.distant_dreams_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.EUCALYPTUS_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_EUCALYPTUS_LOG.get());
+                        output.accept(ModBlocks.EUCALYPTUS_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_EUCALYPTUS_WOOD.get());
                         output.accept(ModBlocks.EUCALYPTUS_PLANKS.get());
                         output.accept(ModBlocks.EUCALYPTUS_STAIRS.get());
                         output.accept(ModBlocks.EUCALYPTUS_SLAB.get());
@@ -29,6 +33,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.EUCALYPTUS_DOOR.get());
                         output.accept(ModBlocks.EUCALYPTUS_TRAPDOOR.get());
                         output.accept(ModBlocks.EUCALYPTUS_LEAVES.get());
+                        output.accept(ModItems.EUCALYPTUS_SAPLING.get());
+                        output.accept(ModBlocks.SEQUOIA_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_SEQUOIA_LOG.get());
+                        output.accept(ModBlocks.SEQUOIA_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_SEQUOIA_WOOD.get());
                         output.accept(ModBlocks.SEQUOIA_PLANKS.get());
                         output.accept(ModBlocks.SEQUOIA_STAIRS.get());
                         output.accept(ModBlocks.SEQUOIA_SLAB.get());
@@ -40,7 +49,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SEQUOIA_TRAPDOOR.get());
                         output.accept(ModBlocks.SEQUOIA_LEAVES.get());
                         output.accept(ModItems.DREAMCATCHER.get());
-                        output.accept(ModItems.REDWOOD.get());
                     }).build());
 
 

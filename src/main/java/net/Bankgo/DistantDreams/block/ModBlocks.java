@@ -1,6 +1,7 @@
 package net.Bankgo.DistantDreams.block;
 
 import net.Bankgo.DistantDreams.DistantDreams;
+import net.Bankgo.DistantDreams.block.custom.ModFlammableRotatedPillarBlock;
 import net.Bankgo.DistantDreams.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,6 +21,22 @@ public class ModBlocks {
     // Registry for mod blocks
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, DistantDreams.MODID);
+
+    // Eucalyptus Wood
+    public static final RegistryObject<Block> EUCALYPTUS_WOOD = registerBlock("eucalyptus_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+
+    // Stripped Eucalyptus Wood
+    public static final RegistryObject<Block> STRIPPED_EUCALYPTUS_WOOD = registerBlock("stripped_eucalyptus_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
+    // Eucalyptus Log
+    public static final RegistryObject<Block> EUCALYPTUS_LOG = registerBlock("eucalyptus_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+
+    // Stripped Eucalyptus Log
+    public static final RegistryObject<Block> STRIPPED_EUCALYPTUS_LOG = registerBlock("stripped_eucalyptus_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
 
     // Eucalyptus Planks
     public static final RegistryObject<Block> EUCALYPTUS_PLANKS = registerBlock("eucalyptus_planks",
@@ -70,6 +87,22 @@ public class ModBlocks {
                     .noOcclusion()
                     .isSuffocating((state, world, pos) -> false)
                     .isViewBlocking((state, world, pos) -> false)));
+
+    // Sequoia Wood
+    public static final RegistryObject<Block> SEQUOIA_WOOD = registerBlock("sequoia_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+
+    // Stripped Sequoia Wood
+    public static final RegistryObject<Block> STRIPPED_SEQUOIA_WOOD = registerBlock("stripped_sequoia_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
+    // Sequoia Log
+    public static final RegistryObject<Block> SEQUOIA_LOG = registerBlock("sequoia_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+
+    // Stripped Sequoia Log
+    public static final RegistryObject<Block> STRIPPED_SEQUOIA_LOG = registerBlock("stripped_sequoia_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
 
     // Sequoia Planks
     public static final RegistryObject<Block> SEQUOIA_PLANKS = registerBlock("sequoia_planks",

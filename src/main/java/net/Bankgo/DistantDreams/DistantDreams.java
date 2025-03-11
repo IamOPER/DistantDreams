@@ -60,15 +60,7 @@ public class DistantDreams
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModItems.DREAMCATCHER);
-            event.accept(ModItems.REDWOOD);
-        }
 
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.EUCALYPTUS_PLANKS);
-            event.accept(ModBlocks.EUCALYPTUS_LEAVES);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

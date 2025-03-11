@@ -12,12 +12,12 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, DistantDreams.MODID);
 
-    // Dreamcatcher
-    public static final RegistryObject<Item> DREAMCATCHER = ITEMS.register("dreamcatcher",
+    // Eucalyptus Sapling
+    public static final RegistryObject<Item> EUCALYPTUS_SAPLING = ITEMS.register("eucalyptus_sapling",
             () -> new Item(new Item.Properties()));
 
-    // Redwood Bark
-    public static final RegistryObject<Item> REDWOOD = ITEMS.register("redwood",
+    // Dreamcatcher
+    public static final RegistryObject<Item> DREAMCATCHER = ITEMS.register("dreamcatcher",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
