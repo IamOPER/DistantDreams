@@ -5,10 +5,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FarmBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 public class ModFarmBlock extends FarmBlock {
     public ModFarmBlock(Properties properties) {
@@ -16,7 +15,10 @@ public class ModFarmBlock extends FarmBlock {
     }
 
     @Override
-    public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
+    public void randomTick(@NotNull BlockState pState,
+                           @NotNull ServerLevel pLevel,
+                           @NotNull BlockPos pPos,
+                           @NotNull RandomSource pRandom) {
         super.randomTick(pState, pLevel, pPos, pRandom);
         // Double the speed of crops
         BlockPos abovePos = pPos.above();
@@ -28,13 +30,12 @@ public class ModFarmBlock extends FarmBlock {
     }
 
     @Override
-    public boolean canSustainPlant(BlockState state,
-                                   BlockGetter level,
-                                   BlockPos pos,
-                                   Direction face,
-                                   net.minecraftforge.common.IPlantable plantable) {
+    public boolean canSustainPlant(@NotNull BlockState state,
+                                   @NotNull BlockGetter level,
+                                   @NotNull BlockPos pos,
+                                   @NotNull Direction face,
+                                   net.minecraftforge.common.@NotNull IPlantable plantable) {
         // allow stems (or any plant) to grow on this block
         return true;
     }
-
 }

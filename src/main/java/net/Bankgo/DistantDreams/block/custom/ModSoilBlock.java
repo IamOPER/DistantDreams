@@ -39,5 +39,4 @@ public class ModSoilBlock extends Block {
         // Any other tool action → let vanilla/other mods handle it
         return super.getToolModifiedState(state, ctx, action, simulate);
     }
-
 }
