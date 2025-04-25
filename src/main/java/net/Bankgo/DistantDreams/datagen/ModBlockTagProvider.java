@@ -22,6 +22,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         // Block tags for mining
         tag(BlockTags.MINEABLE_WITH_PICKAXE);
 
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.FERTILE_SOIL.get())
+                .add(ModBlocks.FERTILE_PLOT.get());
+
         tag(BlockTags.NEEDS_IRON_TOOL);
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL);
@@ -91,7 +95,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.EUCALYPTUS_LEAVES.get())
                 .add(ModBlocks.SEQUOIA_LEAVES.get());
 
-
+        tag(BlockTags.DIRT)
+                .add(ModBlocks.FERTILE_SOIL.get())
+                .add(ModBlocks.FERTILE_PLOT.get());
 
         // Block tags for stone
         tag(BlockTags.WALLS);

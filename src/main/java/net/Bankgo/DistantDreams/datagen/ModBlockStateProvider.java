@@ -3,9 +3,12 @@ package net.Bankgo.DistantDreams.datagen;
 import net.Bankgo.DistantDreams.DistantDreams;
 import net.Bankgo.DistantDreams.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
@@ -103,6 +106,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.SEQUOIA_PRESSURE_PLATE);
         blockItem(ModBlocks.SEQUOIA_FENCE_GATE);
         blockItem(ModBlocks.SEQUOIA_TRAPDOOR, "_bottom");
+
+        // Soil Blocks
+        grassBlock(ModBlocks.FERTILE_SOIL);
+        farmlandBlock(ModBlocks.FERTILE_PLOT);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
@@ -117,5 +124,59 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject, String appendix) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("distantdreams:block/" +
                 Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath() + appendix));
+    }
+
+    private void grassBlock(RegistryObject<? extends Block> blockRegistryObject) {
+        String basePath = blockRegistryObject.getId().getPath();
+        ResourceLocation topTexture = modLoc("block/" + basePath + "_top");
+        ResourceLocation sideTexture = modLoc("block/" + basePath + "_side");
+        ResourceLocation bottomTexture = modLoc("block/" + basePath + "_bottom");
+
+        ModelFile grassModel = models().cubeBottomTop(
+                basePath,
+                sideTexture,
+                bottomTexture,
+                topTexture
+                );
+        simpleBlock(blockRegistryObject.get(), grassModel);
+        simpleBlockItem(blockRegistryObject.get(), grassModel);
+    }
+
+    private void farmlandBlock(RegistryObject<? extends Block> blockRegistryObject) {
+        String basePath = blockRegistryObject.getId().getPath();
+        ResourceLocation topWetTexture = modLoc("block/" + basePath + "_top_wet");
+        ResourceLocation topTexture = modLoc("block/" + basePath + "_top");
+        ResourceLocation sideTexture = modLoc("block/" + basePath + "_side");
+        ResourceLocation bottomTexture = modLoc("block/" + basePath + "_bottom");
+
+        ModelFile farmlandDryModel = models().withExistingParent(
+                basePath + "_dry",
+                mcLoc("block/farmland")
+        ).texture(
+                "side", sideTexture
+        ).texture(
+                "bottom", bottomTexture
+        ).texture(
+                "top", topTexture
+        );
+
+        ModelFile farmlandWetModel = models().withExistingParent(
+                basePath + "_wet",
+                mcLoc("block/farmland")
+        ).texture(
+                "side", sideTexture
+        ).texture(
+                "bottom", bottomTexture
+        ).texture(
+                "top", topWetTexture
+        );
+
+        getVariantBuilder(blockRegistryObject.get())
+                .forAllStates(state -> ConfiguredModel.builder()
+                        .modelFile(state.getValue(BlockStateProperties.MOISTURE) == 0
+                                ? farmlandDryModel : farmlandWetModel)
+                        .build());
+
+        simpleBlockItem(blockRegistryObject.get(), farmlandWetModel);
     }
 }

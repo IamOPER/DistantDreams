@@ -2,6 +2,8 @@ package net.Bankgo.DistantDreams.block;
 
 import net.Bankgo.DistantDreams.DistantDreams;
 import net.Bankgo.DistantDreams.block.custom.ModFlammableRotatedPillarBlock;
+import net.Bankgo.DistantDreams.block.custom.ModFarmBlock;
+import net.Bankgo.DistantDreams.block.custom.ModSoilBlock;
 import net.Bankgo.DistantDreams.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -153,6 +155,18 @@ public class ModBlocks {
                     .noOcclusion()
                     .isSuffocating((state, world, pos) -> false)
                     .isViewBlocking((state, world, pos) -> false)));
+
+    // Fertile Soil Block
+    public static final RegistryObject<Block> FERTILE_SOIL = registerBlock("fertile_soil",
+            () -> new ModSoilBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PODZOL)));
+
+    // Fertile Plot Block
+    public static final RegistryObject<Block> FERTILE_PLOT = registerBlock("fertile_plot",
+            () -> new ModFarmBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FARMLAND)));
+
+
+    // Limestone Block
+    // Code here
 
     // Limestone Wall
     // Code here

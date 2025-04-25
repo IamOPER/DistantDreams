@@ -16,6 +16,10 @@ public class ModItems {
     public static final RegistryObject<Item> EUCALYPTUS_SAPLING = ITEMS.register("eucalyptus_sapling",
             () -> new Item(new Item.Properties()));
 
+    // Sequoia Sapling
+    public static final RegistryObject<Item> SEQUOIA_SAPLING = ITEMS.register("sequoia_sapling",
+            () -> new Item(new Item.Properties()));
+
     // Dreamcatcher
     public static final RegistryObject<Item> DREAMCATCHER = ITEMS.register("dreamcatcher",
             () -> new Item(new Item.Properties()));

@@ -32,5 +32,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
         copy(BlockTags.WOODEN_PRESSURE_PLATES, ItemTags.WOODEN_PRESSURE_PLATES);
         copy(BlockTags.WOODEN_BUTTONS, ItemTags.WOODEN_BUTTONS);
         copy(BlockTags.LEAVES, ItemTags.LEAVES);
+        copy(BlockTags.DIRT, ItemTags.DIRT);
     }
 }

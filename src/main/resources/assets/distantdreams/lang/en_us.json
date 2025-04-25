@@ -29,7 +29,11 @@
   "block.distantdreams.sequoia_trapdoor": "Sequoia Trapdoor",
   "block.distantdreams.sequoia_leaves": "Sequoia Leaves",
 
+  "block.distantdreams.fertile_soil": "Fertile Soil",
+  "block.distantdreams.fertile_plot": "Fertile Plot",
+
   "item.distantdreams.eucalyptus_sapling": "Eucalyptus Sapling",
+  "item.distantdreams.sequoia_sapling": "Sequoia Sapling",
 
   "creativetab.distantdreams.distant_dreams_tab": "Distant Dreams"
 }

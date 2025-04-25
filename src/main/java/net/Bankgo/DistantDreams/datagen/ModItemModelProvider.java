@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.EUCALYPTUS_SAPLING.get());
+        basicItem(ModItems.SEQUOIA_SAPLING.get());
 
         // Button Item
         buttonItem(ModBlocks.EUCALYPTUS_BUTTON, ModBlocks.EUCALYPTUS_PLANKS);
