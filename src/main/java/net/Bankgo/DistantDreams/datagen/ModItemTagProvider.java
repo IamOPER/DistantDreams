@@ -33,5 +33,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
         copy(BlockTags.WOODEN_BUTTONS, ItemTags.WOODEN_BUTTONS);
         copy(BlockTags.LEAVES, ItemTags.LEAVES);
         copy(BlockTags.DIRT, ItemTags.DIRT);
+        copy(BlockTags.STONE_BRICKS, ItemTags.STONE_BRICKS);
+        copy(BlockTags.SLABS, ItemTags.SLABS);
+        copy(BlockTags.STAIRS, ItemTags.STAIRS);
+        copy(BlockTags.WALLS, ItemTags.WALLS);
+        copy(BlockTags.STONE_BUTTONS, ItemTags.STONE_BUTTONS);
     }
 }

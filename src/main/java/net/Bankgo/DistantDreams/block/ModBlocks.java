@@ -163,12 +163,137 @@ public class ModBlocks {
     public static final RegistryObject<Block> FERTILE_PLOT = registerBlock("fertile_plot",
             () -> new ModFarmBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FARMLAND)));
 
+    // Distant Stone Block
+    public static final RegistryObject<Block> DISTANT_STONE = registerBlock("distant_stone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    // Distant Stone Stairs
+    public static final RegistryObject<StairBlock> DISTANT_STONE_STAIRS = registerBlock("distant_stone_stairs",
+            () -> new StairBlock(ModBlocks.DISTANT_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_STAIRS)));
+
+    // Distant Stone Slab
+    public static final RegistryObject<SlabBlock> DISTANT_STONE_SLAB = registerBlock("distant_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)));
+
+    // Distant Stone Pressure Plate
+    public static final RegistryObject<PressurePlateBlock> DISTANT_STONE_PRESSURE_PLATE = registerBlock("distant_stone_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE)));
+
+    // Distant Stone Button
+    public static final RegistryObject<ButtonBlock> DISTANT_STONE_BUTTON = registerBlock("distant_stone_button",
+            () -> new ButtonBlock(BlockSetType.STONE,
+                    10,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
+
+    // Distant Stone Wall
+    public static final RegistryObject<WallBlock> DISTANT_STONE_WALL = registerBlock("distant_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_WALL)));
+
+    // Polished Distant Stone
+    public static final RegistryObject<Block> POLISHED_DISTANT_STONE = registerBlock("polished_distant_stone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE)));
+
+    // Polished Distant Stone Stairs
+    public static final RegistryObject<StairBlock> POLISHED_DISTANT_STONE_STAIRS = registerBlock("polished_distant_stone_stairs",
+            () -> new StairBlock(ModBlocks.POLISHED_DISTANT_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE_STAIRS)));
+
+    // Polished Distant Stone Slab
+    public static final RegistryObject<SlabBlock> POLISHED_DISTANT_STONE_SLAB = registerBlock("polished_distant_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE_SLAB)));
+
+    // Polished Distant Stone Wall
+    public static final RegistryObject<WallBlock> POLISHED_DISTANT_STONE_WALL = registerBlock("polished_distant_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_WALL)));
+
+    // Distant Stone Bricks
+    public static final RegistryObject<Block> DISTANT_STONE_BRICKS = registerBlock("distant_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
+
+    // Distant Stone Brick Stairs
+    public static final RegistryObject<StairBlock> DISTANT_STONE_BRICK_STAIRS = registerBlock("distant_stone_brick_stairs",
+            () -> new StairBlock(ModBlocks.DISTANT_STONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_STAIRS)));
+
+    // Distant Stone Brick Slab
+    public static final RegistryObject<SlabBlock> DISTANT_STONE_BRICK_SLAB = registerBlock("distant_stone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB)));
+
+    // Distant Stone Brick Wall
+    public static final RegistryObject<WallBlock> DISTANT_STONE_BRICK_WALL = registerBlock("distant_stone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
 
     // Limestone Block
-    // Code here
+    public static final RegistryObject<Block> LIMESTONE = registerBlock("limestone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    // Limestone Stairs
+    public static final RegistryObject<StairBlock> LIMESTONE_STAIRS = registerBlock("limestone_stairs",
+            () -> new StairBlock(ModBlocks.LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_STAIRS)));
+
+    // Limestone Slab
+    public static final RegistryObject<SlabBlock> LIMESTONE_SLAB = registerBlock("limestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)));
+
+    // Limestone Pressure Plate
+    public static final RegistryObject<PressurePlateBlock> LIMESTONE_PRESSURE_PLATE = registerBlock("limestone_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE)));
+
+    // Limestone Button
+    public static final RegistryObject<ButtonBlock> LIMESTONE_BUTTON = registerBlock("limestone_button",
+            () -> new ButtonBlock(BlockSetType.STONE,
+                    10,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
 
     // Limestone Wall
-    // Code here
+    public static final RegistryObject<WallBlock> LIMESTONE_WALL = registerBlock("limestone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_WALL)));
+
+    // Polished Limestone
+    public static final RegistryObject<Block> POLISHED_LIMESTONE = registerBlock("polished_limestone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE)));
+
+    // Polished Limestone Stairs
+    public static final RegistryObject<StairBlock> POLISHED_LIMESTONE_STAIRS = registerBlock("polished_limestone_stairs",
+            () -> new StairBlock(ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE_STAIRS)));
+
+    // Polished Limestone Slab
+    public static final RegistryObject<SlabBlock> POLISHED_LIMESTONE_SLAB = registerBlock("polished_limestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE_SLAB)));
+
+    // Polished Limestone Wall
+    public static final RegistryObject<WallBlock> POLISHED_LIMESTONE_WALL = registerBlock("polished_limestone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_WALL)));
+
+    // Limestone Bricks
+    public static final RegistryObject<Block> LIMESTONE_BRICKS = registerBlock("limestone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
+
+    // Limestone Brick Stairs
+    public static final RegistryObject<StairBlock> LIMESTONE_BRICK_STAIRS = registerBlock("limestone_brick_stairs",
+            () -> new StairBlock(ModBlocks.DISTANT_STONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_STAIRS)));
+
+    // Limestone Brick Slab
+    public static final RegistryObject<SlabBlock> LIMESTONE_BRICK_SLAB = registerBlock("limestone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB)));
+
+    // Limestone Brick Wall
+    public static final RegistryObject<WallBlock> LIMESTONE_BRICK_WALL = registerBlock("limestone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
+
+    // Limestone Pillar
+    public static final RegistryObject<Block> LIMESTONE_PILLAR = registerBlock("limestone_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR)));
+
+    // Limestone Powder
+    public static final RegistryObject<Block> LIMESTONE_POWDER = registerBlock("limestone_powder",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

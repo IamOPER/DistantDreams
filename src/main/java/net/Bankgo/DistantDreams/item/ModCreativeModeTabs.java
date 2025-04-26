@@ -52,6 +52,37 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FERTILE_SOIL.get());
                         output.accept(ModBlocks.FERTILE_PLOT.get());
                         output.accept(ModItems.DREAMCATCHER.get());
+
+                        output.accept(ModBlocks.DISTANT_STONE.get());
+                        output.accept(ModBlocks.DISTANT_STONE_STAIRS.get());
+                        output.accept(ModBlocks.DISTANT_STONE_SLAB.get());
+                        output.accept(ModBlocks.DISTANT_STONE_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.DISTANT_STONE_BUTTON.get());
+                        output.accept(ModBlocks.DISTANT_STONE_WALL.get());
+                        output.accept(ModBlocks.POLISHED_DISTANT_STONE.get());
+                        output.accept(ModBlocks.POLISHED_DISTANT_STONE_STAIRS.get());
+                        output.accept(ModBlocks.POLISHED_DISTANT_STONE_SLAB.get());
+                        output.accept(ModBlocks.POLISHED_DISTANT_STONE_WALL.get());
+                        output.accept(ModBlocks.DISTANT_STONE_BRICKS.get());
+                        output.accept(ModBlocks.DISTANT_STONE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.DISTANT_STONE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.DISTANT_STONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.LIMESTONE.get());
+                        output.accept(ModBlocks.LIMESTONE_STAIRS.get());
+                        output.accept(ModBlocks.LIMESTONE_SLAB.get());
+                        output.accept(ModBlocks.LIMESTONE_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.LIMESTONE_BUTTON.get());
+                        output.accept(ModBlocks.LIMESTONE_WALL.get());
+                        output.accept(ModBlocks.POLISHED_LIMESTONE.get());
+                        output.accept(ModBlocks.POLISHED_LIMESTONE_STAIRS.get());
+                        output.accept(ModBlocks.POLISHED_LIMESTONE_SLAB.get());
+                        output.accept(ModBlocks.POLISHED_LIMESTONE_WALL.get());
+                        output.accept(ModBlocks.LIMESTONE_BRICKS.get());
+                        output.accept(ModBlocks.LIMESTONE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.LIMESTONE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.LIMESTONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.LIMESTONE_PILLAR.get());
+                        output.accept(ModBlocks.LIMESTONE_POWDER.get());
                     }).build());
 
 

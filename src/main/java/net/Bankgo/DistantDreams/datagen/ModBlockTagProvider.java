@@ -20,7 +20,37 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
         // Block tags for mining
-        tag(BlockTags.MINEABLE_WITH_PICKAXE);
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.DISTANT_STONE.get())
+                .add(ModBlocks.DISTANT_STONE_STAIRS.get())
+                .add(ModBlocks.DISTANT_STONE_SLAB.get())
+                .add(ModBlocks.DISTANT_STONE_PRESSURE_PLATE.get())
+                .add(ModBlocks.DISTANT_STONE_BUTTON.get())
+                .add(ModBlocks.DISTANT_STONE_WALL.get())
+                .add(ModBlocks.POLISHED_DISTANT_STONE.get())
+                .add(ModBlocks.POLISHED_DISTANT_STONE_STAIRS.get())
+                .add(ModBlocks.POLISHED_DISTANT_STONE_SLAB.get())
+                .add(ModBlocks.POLISHED_DISTANT_STONE_WALL.get())
+                .add(ModBlocks.DISTANT_STONE_BRICKS.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_SLAB.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_WALL.get())
+                .add(ModBlocks.LIMESTONE.get())
+                .add(ModBlocks.LIMESTONE_STAIRS.get())
+                .add(ModBlocks.LIMESTONE_SLAB.get())
+                .add(ModBlocks.LIMESTONE_PRESSURE_PLATE.get())
+                .add(ModBlocks.LIMESTONE_BUTTON.get())
+                .add(ModBlocks.LIMESTONE_WALL.get())
+                .add(ModBlocks.POLISHED_LIMESTONE.get())
+                .add(ModBlocks.POLISHED_LIMESTONE_STAIRS.get())
+                .add(ModBlocks.POLISHED_LIMESTONE_SLAB.get())
+                .add(ModBlocks.POLISHED_LIMESTONE_WALL.get())
+                .add(ModBlocks.LIMESTONE_BRICKS.get())
+                .add(ModBlocks.LIMESTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.LIMESTONE_BRICK_SLAB.get())
+                .add(ModBlocks.LIMESTONE_BRICK_WALL.get())
+                .add(ModBlocks.LIMESTONE_PILLAR.get())
+                .add(ModBlocks.LIMESTONE_POWDER.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.FERTILE_SOIL.get())
@@ -99,7 +129,43 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.FERTILE_SOIL.get())
                 .add(ModBlocks.FERTILE_PLOT.get());
 
+        tag(BlockTags.STAIRS)
+                .add(ModBlocks.DISTANT_STONE_STAIRS.get())
+                .add(ModBlocks.POLISHED_DISTANT_STONE_STAIRS.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.LIMESTONE_STAIRS.get())
+                .add(ModBlocks.POLISHED_LIMESTONE_STAIRS.get())
+                .add(ModBlocks.LIMESTONE_BRICK_STAIRS.get());
+
+        tag(BlockTags.SLABS)
+                .add(ModBlocks.DISTANT_STONE_SLAB.get())
+                .add(ModBlocks.POLISHED_DISTANT_STONE_SLAB.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_SLAB.get())
+                .add(ModBlocks.LIMESTONE_SLAB.get())
+                .add(ModBlocks.POLISHED_LIMESTONE_SLAB.get())
+                .add(ModBlocks.LIMESTONE_BRICK_SLAB.get());
+
+        tag(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.DISTANT_STONE_PRESSURE_PLATE.get())
+                .add(ModBlocks.LIMESTONE_PRESSURE_PLATE.get());
+
         // Block tags for stone
-        tag(BlockTags.WALLS);
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.DISTANT_STONE_WALL.get())
+                .add(ModBlocks.POLISHED_DISTANT_STONE_WALL.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_WALL.get())
+                .add(ModBlocks.LIMESTONE_WALL.get())
+                .add(ModBlocks.POLISHED_LIMESTONE_WALL.get())
+                .add(ModBlocks.LIMESTONE_BRICK_WALL.get());
+
+        tag(BlockTags.STONE_BRICKS)
+                .add(ModBlocks.DISTANT_STONE_BRICKS.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_SLAB.get())
+                .add(ModBlocks.DISTANT_STONE_BRICK_WALL.get());
+
+        tag(BlockTags.STONE_BUTTONS)
+                .add(ModBlocks.DISTANT_STONE_BUTTON.get())
+                .add(ModBlocks.LIMESTONE_BUTTON.get());
     }
 }
