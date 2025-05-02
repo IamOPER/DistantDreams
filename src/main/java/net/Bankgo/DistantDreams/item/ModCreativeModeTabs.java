@@ -67,6 +67,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DISTANT_STONE_BRICK_STAIRS.get());
                         output.accept(ModBlocks.DISTANT_STONE_BRICK_SLAB.get());
                         output.accept(ModBlocks.DISTANT_STONE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CRACKED_DISTANT_STONE_BRICKS.get());
+                        output.accept(ModBlocks.MOSSY_DISTANT_STONE_BRICKS.get());
+                        output.accept(ModBlocks.MOSSY_DISTANT_STONE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.MOSSY_DISTANT_STONE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.MOSSY_DISTANT_STONE_BRICK_WALL.get());
                         output.accept(ModBlocks.LIMESTONE.get());
                         output.accept(ModBlocks.LIMESTONE_STAIRS.get());
                         output.accept(ModBlocks.LIMESTONE_SLAB.get());
@@ -83,6 +88,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LIMESTONE_BRICK_WALL.get());
                         output.accept(ModBlocks.LIMESTONE_PILLAR.get());
                         output.accept(ModBlocks.LIMESTONE_POWDER.get());
+                        output.accept(ModBlocks.CRACKED_LIMESTONE_BRICKS.get());
+                        output.accept(ModBlocks.MOSSY_LIMESTONE_BRICKS.get());
+                        output.accept(ModBlocks.MOSSY_LIMESTONE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.MOSSY_LIMESTONE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.MOSSY_LIMESTONE_BRICK_WALL.get());
                     }).build());
 
 

@@ -46,6 +46,11 @@
   "block.distantdreams.distant_stone_brick_stairs": "Distant Stone Brick Stairs",
   "block.distantdreams.distant_stone_brick_slab": "Distant Stone Brick Slab",
   "block.distantdreams.distant_stone_brick_wall": "Distant Stone Brick Wall",
+  "block.distantdreams.cracked_distant_stone_bricks": "Cracked Distant Stone Bricks",
+  "block.distantdreams.mossy_distant_stone_bricks": "Mossy Distant Stone Bricks",
+  "block.distantdreams.mossy_distant_stone_brick_stairs": "Mossy Distant Stone Brick Stairs",
+  "block.distantdreams.mossy_distant_stone_brick_slab": "Mossy Distant Stone Brick Slab",
+  "block.distantdreams.mossy_distant_stone_brick_wall": "Mossy Distant Stone Brick Wall",
 
   "block.distantdreams.limestone": "Limestone",
   "block.distantdreams.limestone_stairs": "Limestone Stairs",
@@ -63,6 +68,11 @@
   "block.distantdreams.limestone_brick_wall": "Limestone Brick Wall",
   "block.distantdreams.limestone_pillar": "Limestone Pillar",
   "block.distantdreams.limestone_powder": "Limestone Powder",
+  "block.distantdreams.cracked_limestone_bricks": "Cracked Limestone Bricks",
+  "block.distantdreams.mossy_limestone_bricks": "Mossy Limestone Bricks",
+  "block.distantdreams.mossy_limestone_brick_stairs": "Mossy Limestone Brick Stairs",
+  "block.distantdreams.mossy_limestone_brick_slab": "Mossy Limestone Brick Slab",
+  "block.distantdreams.mossy_limestone_brick_wall": "Mossy Limestone Brick Wall",
 
   "item.distantdreams.eucalyptus_sapling": "Eucalyptus Sapling",
   "item.distantdreams.sequoia_sapling": "Sequoia Sapling",

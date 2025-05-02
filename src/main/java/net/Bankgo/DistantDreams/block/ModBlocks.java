@@ -225,6 +225,27 @@ public class ModBlocks {
     public static final RegistryObject<WallBlock> DISTANT_STONE_BRICK_WALL = registerBlock("distant_stone_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
 
+    // Cracked Distant Stone Brick
+    public static final RegistryObject<Block> CRACKED_DISTANT_STONE_BRICKS = registerBlock("cracked_distant_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS)));
+
+    // Mossy Distant Stone Brick
+    public static final RegistryObject<Block> MOSSY_DISTANT_STONE_BRICKS = registerBlock("mossy_distant_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS)));
+
+    // Distant Stone Brick Stairs
+    public static final RegistryObject<StairBlock> MOSSY_DISTANT_STONE_BRICK_STAIRS = registerBlock("mossy_distant_stone_brick_stairs",
+            () -> new StairBlock(ModBlocks.DISTANT_STONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_STAIRS)));
+
+    // Distant Stone Brick Slab
+    public static final RegistryObject<SlabBlock> MOSSY_DISTANT_STONE_BRICK_SLAB = registerBlock("mossy_distant_stone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB)));
+
+    // Distant Stone Brick Wall
+    public static final RegistryObject<WallBlock> MOSSY_DISTANT_STONE_BRICK_WALL = registerBlock("mossy_distant_stone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_WALL)));
+
     // Limestone Block
     public static final RegistryObject<Block> LIMESTONE = registerBlock("limestone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
@@ -294,6 +315,28 @@ public class ModBlocks {
     // Limestone Powder
     public static final RegistryObject<Block> LIMESTONE_POWDER = registerBlock("limestone_powder",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
+
+    // Cracked Limestone Bricks
+    public static final RegistryObject<Block> CRACKED_LIMESTONE_BRICKS = registerBlock("cracked_limestone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS)));
+
+    // Mossy Limestone Bricks
+    public static final RegistryObject<Block> MOSSY_LIMESTONE_BRICKS = registerBlock("mossy_limestone_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS)));
+
+    // Mossy Limestone Brick Stairs
+    public static final RegistryObject<StairBlock> MOSSY_LIMESTONE_BRICK_STAIRS = registerBlock("mossy_limestone_brick_stairs",
+            () -> new StairBlock(ModBlocks.DISTANT_STONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_STAIRS)));
+
+    // Mossy Limestone Brick Slab
+    public static final RegistryObject<SlabBlock> MOSSY_LIMESTONE_BRICK_SLAB = registerBlock("mossy_limestone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB)));
+
+    // Mossy Limestone Brick Wall
+    public static final RegistryObject<WallBlock> MOSSY_LIMESTONE_BRICK_WALL = registerBlock("mossy_limestone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_WALL)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

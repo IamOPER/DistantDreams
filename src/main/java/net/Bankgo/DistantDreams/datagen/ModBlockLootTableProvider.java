@@ -77,6 +77,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.DISTANT_STONE_BRICK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.DISTANT_STONE_BRICK_SLAB.get()));
         dropSelf(ModBlocks.DISTANT_STONE_BRICK_WALL.get());
+        dropSelf(ModBlocks.CRACKED_DISTANT_STONE_BRICKS.get());
+        dropSelf(ModBlocks.MOSSY_DISTANT_STONE_BRICKS.get());
+        dropSelf(ModBlocks.MOSSY_DISTANT_STONE_BRICK_STAIRS.get());
+        this.add(ModBlocks.MOSSY_DISTANT_STONE_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MOSSY_DISTANT_STONE_BRICK_SLAB.get()));
+        dropSelf(ModBlocks.MOSSY_DISTANT_STONE_BRICK_WALL.get());
         // Limestone Set
         dropSelf(ModBlocks.LIMESTONE.get());
         dropSelf(ModBlocks.LIMESTONE_STAIRS.get());
@@ -97,6 +103,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LIMESTONE_BRICK_WALL.get());
         dropSelf(ModBlocks.LIMESTONE_PILLAR.get());
         dropSelf(ModBlocks.LIMESTONE_POWDER.get());
+        dropSelf(ModBlocks.CRACKED_LIMESTONE_BRICKS.get());
+        dropSelf(ModBlocks.MOSSY_LIMESTONE_BRICKS.get());
+        dropSelf(ModBlocks.MOSSY_LIMESTONE_BRICK_STAIRS.get());
+        this.add(ModBlocks.MOSSY_LIMESTONE_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MOSSY_LIMESTONE_BRICK_SLAB.get()));
+        dropSelf(ModBlocks.MOSSY_LIMESTONE_BRICK_WALL.get());
     }
 
     @Override

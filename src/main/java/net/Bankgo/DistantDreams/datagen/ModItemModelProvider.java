@@ -45,6 +45,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.LIMESTONE_WALL, ModBlocks.LIMESTONE);
         wallItem(ModBlocks.POLISHED_LIMESTONE_WALL, ModBlocks.POLISHED_LIMESTONE);
         wallItem(ModBlocks.LIMESTONE_BRICK_WALL, ModBlocks.LIMESTONE_BRICKS);
+        wallItem(ModBlocks.MOSSY_DISTANT_STONE_BRICK_WALL, ModBlocks.MOSSY_DISTANT_STONE_BRICKS);
+        wallItem(ModBlocks.MOSSY_LIMESTONE_BRICK_WALL, ModBlocks.MOSSY_LIMESTONE_BRICKS);
     }
 
     public void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {

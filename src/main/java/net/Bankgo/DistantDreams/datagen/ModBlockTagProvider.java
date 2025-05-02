@@ -133,17 +133,21 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DISTANT_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_DISTANT_STONE_STAIRS.get())
                 .add(ModBlocks.DISTANT_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.MOSSY_DISTANT_STONE_BRICK_STAIRS.get())
                 .add(ModBlocks.LIMESTONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_LIMESTONE_STAIRS.get())
-                .add(ModBlocks.LIMESTONE_BRICK_STAIRS.get());
+                .add(ModBlocks.LIMESTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.MOSSY_LIMESTONE_BRICK_STAIRS.get());
 
         tag(BlockTags.SLABS)
                 .add(ModBlocks.DISTANT_STONE_SLAB.get())
                 .add(ModBlocks.POLISHED_DISTANT_STONE_SLAB.get())
                 .add(ModBlocks.DISTANT_STONE_BRICK_SLAB.get())
+                .add(ModBlocks.MOSSY_DISTANT_STONE_BRICK_SLAB.get())
                 .add(ModBlocks.LIMESTONE_SLAB.get())
                 .add(ModBlocks.POLISHED_LIMESTONE_SLAB.get())
-                .add(ModBlocks.LIMESTONE_BRICK_SLAB.get());
+                .add(ModBlocks.LIMESTONE_BRICK_SLAB.get())
+                .add(ModBlocks.MOSSY_LIMESTONE_BRICK_SLAB.get());
 
         tag(BlockTags.PRESSURE_PLATES)
                 .add(ModBlocks.DISTANT_STONE_PRESSURE_PLATE.get())
@@ -154,18 +158,35 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DISTANT_STONE_WALL.get())
                 .add(ModBlocks.POLISHED_DISTANT_STONE_WALL.get())
                 .add(ModBlocks.DISTANT_STONE_BRICK_WALL.get())
+                .add(ModBlocks.MOSSY_DISTANT_STONE_BRICK_WALL.get())
                 .add(ModBlocks.LIMESTONE_WALL.get())
                 .add(ModBlocks.POLISHED_LIMESTONE_WALL.get())
-                .add(ModBlocks.LIMESTONE_BRICK_WALL.get());
+                .add(ModBlocks.LIMESTONE_BRICK_WALL.get())
+                .add(ModBlocks.MOSSY_LIMESTONE_BRICK_WALL.get());
 
         tag(BlockTags.STONE_BRICKS)
                 .add(ModBlocks.DISTANT_STONE_BRICKS.get())
                 .add(ModBlocks.DISTANT_STONE_BRICK_STAIRS.get())
                 .add(ModBlocks.DISTANT_STONE_BRICK_SLAB.get())
-                .add(ModBlocks.DISTANT_STONE_BRICK_WALL.get());
+                .add(ModBlocks.DISTANT_STONE_BRICK_WALL.get())
+                .add(ModBlocks.CRACKED_DISTANT_STONE_BRICKS.get())
+                .add(ModBlocks.MOSSY_DISTANT_STONE_BRICKS.get())
+                .add(ModBlocks.MOSSY_DISTANT_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.MOSSY_DISTANT_STONE_BRICK_SLAB.get())
+                .add(ModBlocks.MOSSY_DISTANT_STONE_BRICK_WALL.get())
+                .add(ModBlocks.LIMESTONE_BRICKS.get())
+                .add(ModBlocks.LIMESTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.LIMESTONE_BRICK_SLAB.get())
+                .add(ModBlocks.LIMESTONE_BRICK_WALL.get())
+                .add(ModBlocks.CRACKED_LIMESTONE_BRICKS.get())
+                .add(ModBlocks.MOSSY_LIMESTONE_BRICKS.get())
+                .add(ModBlocks.MOSSY_LIMESTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.MOSSY_LIMESTONE_BRICK_SLAB.get())
+                .add(ModBlocks.MOSSY_LIMESTONE_BRICK_WALL.get());
 
         tag(BlockTags.STONE_BUTTONS)
                 .add(ModBlocks.DISTANT_STONE_BUTTON.get())
                 .add(ModBlocks.LIMESTONE_BUTTON.get());
+
     }
 }

@@ -33,10 +33,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DISTANT_STONE);
         blockWithItem(ModBlocks.POLISHED_DISTANT_STONE);
         blockWithItem(ModBlocks.DISTANT_STONE_BRICKS);
+        blockWithItem(ModBlocks.CRACKED_DISTANT_STONE_BRICKS);
+        blockWithItem(ModBlocks.MOSSY_DISTANT_STONE_BRICKS);
         blockWithItem(ModBlocks.LIMESTONE);
         blockWithItem(ModBlocks.POLISHED_LIMESTONE);
         blockWithItem(ModBlocks.LIMESTONE_BRICKS);
         blockWithItem(ModBlocks.LIMESTONE_POWDER);
+        blockWithItem(ModBlocks.CRACKED_LIMESTONE_BRICKS);
+        blockWithItem(ModBlocks.MOSSY_LIMESTONE_BRICKS);
 
         // Wood log blocks
         logBlock((RotatedPillarBlock) ModBlocks.EUCALYPTUS_LOG.get());
@@ -73,9 +77,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock(ModBlocks.DISTANT_STONE_STAIRS.get(), blockTexture(ModBlocks.DISTANT_STONE.get()));
         stairsBlock(ModBlocks.POLISHED_DISTANT_STONE_STAIRS.get(), blockTexture(ModBlocks.POLISHED_DISTANT_STONE.get()));
         stairsBlock(ModBlocks.DISTANT_STONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.DISTANT_STONE_BRICKS.get()));
+        stairsBlock(ModBlocks.MOSSY_DISTANT_STONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.MOSSY_DISTANT_STONE_BRICKS.get()));
         stairsBlock(ModBlocks.LIMESTONE_STAIRS.get(), blockTexture(ModBlocks.LIMESTONE.get()));
         stairsBlock(ModBlocks.POLISHED_LIMESTONE_STAIRS.get(), blockTexture(ModBlocks.POLISHED_LIMESTONE.get()));
         stairsBlock(ModBlocks.LIMESTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()));
+        stairsBlock(ModBlocks.MOSSY_LIMESTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.MOSSY_LIMESTONE_BRICKS.get()));
 
         // Slab Blocks
         slabBlock(ModBlocks.EUCALYPTUS_SLAB.get(), blockTexture(ModBlocks.EUCALYPTUS_PLANKS.get()), blockTexture(ModBlocks.EUCALYPTUS_PLANKS.get()));
@@ -83,9 +89,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(ModBlocks.DISTANT_STONE_SLAB.get(), blockTexture(ModBlocks.DISTANT_STONE.get()), blockTexture(ModBlocks.DISTANT_STONE.get()));
         slabBlock(ModBlocks.POLISHED_DISTANT_STONE_SLAB.get(), blockTexture(ModBlocks.POLISHED_DISTANT_STONE.get()), blockTexture(ModBlocks.POLISHED_DISTANT_STONE.get()));
         slabBlock(ModBlocks.DISTANT_STONE_BRICK_SLAB.get(), blockTexture(ModBlocks.DISTANT_STONE_BRICKS.get()), blockTexture(ModBlocks.DISTANT_STONE_BRICKS.get()));
+        slabBlock(ModBlocks.MOSSY_DISTANT_STONE_BRICK_SLAB.get(), blockTexture(ModBlocks.MOSSY_DISTANT_STONE_BRICKS.get()), blockTexture(ModBlocks.MOSSY_DISTANT_STONE_BRICKS.get()));
         slabBlock(ModBlocks.LIMESTONE_SLAB.get(), blockTexture(ModBlocks.LIMESTONE.get()), blockTexture(ModBlocks.LIMESTONE.get()));
         slabBlock(ModBlocks.POLISHED_LIMESTONE_SLAB.get(), blockTexture(ModBlocks.POLISHED_LIMESTONE.get()), blockTexture(ModBlocks.POLISHED_LIMESTONE.get()));
         slabBlock(ModBlocks.LIMESTONE_BRICK_SLAB.get(), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()));
+        slabBlock(ModBlocks.MOSSY_LIMESTONE_BRICK_SLAB.get(), blockTexture(ModBlocks.MOSSY_LIMESTONE_BRICKS.get()), blockTexture(ModBlocks.MOSSY_LIMESTONE_BRICKS.get()));
 
         // Button Blocks
         buttonBlock(ModBlocks.EUCALYPTUS_BUTTON.get(), blockTexture(ModBlocks.EUCALYPTUS_PLANKS.get()));
@@ -119,9 +127,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         wallBlock(ModBlocks.DISTANT_STONE_WALL.get(), blockTexture(ModBlocks.DISTANT_STONE.get()));
         wallBlock(ModBlocks.POLISHED_DISTANT_STONE_WALL.get(), blockTexture(ModBlocks.POLISHED_DISTANT_STONE.get()));
         wallBlock(ModBlocks.DISTANT_STONE_BRICK_WALL.get(), blockTexture(ModBlocks.DISTANT_STONE_BRICKS.get()));
+        wallBlock(ModBlocks.MOSSY_DISTANT_STONE_BRICK_WALL.get(), blockTexture(ModBlocks.MOSSY_DISTANT_STONE_BRICKS.get()));
         wallBlock(ModBlocks.LIMESTONE_WALL.get(), blockTexture(ModBlocks.LIMESTONE.get()));
         wallBlock(ModBlocks.POLISHED_LIMESTONE_WALL.get(), blockTexture(ModBlocks.POLISHED_LIMESTONE.get()));
         wallBlock(ModBlocks.LIMESTONE_BRICK_WALL.get(), blockTexture(ModBlocks.LIMESTONE_BRICKS.get()));
+        wallBlock(ModBlocks.MOSSY_LIMESTONE_BRICK_WALL.get(), blockTexture(ModBlocks.MOSSY_LIMESTONE_BRICKS.get()));
 
         // Non-standard Eucalyptus Wood Items
         blockItem(ModBlocks.EUCALYPTUS_LOG);
@@ -156,6 +166,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.DISTANT_STONE_BRICK_STAIRS);
         blockItem(ModBlocks.DISTANT_STONE_BRICK_SLAB);
         blockItem(ModBlocks.DISTANT_STONE_BRICK_WALL);
+        blockItem(ModBlocks.MOSSY_DISTANT_STONE_BRICK_STAIRS);
+        blockItem(ModBlocks.MOSSY_DISTANT_STONE_BRICK_SLAB);
+        blockItem(ModBlocks.MOSSY_DISTANT_STONE_BRICK_WALL);
 
         // Non-standard Limestone Items
         blockItem(ModBlocks.LIMESTONE_STAIRS);
@@ -169,6 +182,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.LIMESTONE_BRICK_SLAB);
         blockItem(ModBlocks.LIMESTONE_BRICK_WALL);
         blockItem(ModBlocks.LIMESTONE_PILLAR);
+        blockItem(ModBlocks.MOSSY_LIMESTONE_BRICK_STAIRS);
+        blockItem(ModBlocks.MOSSY_LIMESTONE_BRICK_SLAB);
+        blockItem(ModBlocks.MOSSY_LIMESTONE_BRICK_WALL);
 
         // Soil Blocks
         grassBlock(ModBlocks.FERTILE_SOIL);
