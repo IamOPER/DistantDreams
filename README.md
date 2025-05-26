@@ -14,13 +14,11 @@
 - [Features](#-features)
 - [Installation](#-installation)
 - [What's Included](#-whats-included)
-- [Block Mechanics](#-block-mechanics)
-- [To-Do List](#-to-do-list)
 - [Known Issues](#-known-issues)
 - [Technical Information](#-technical-information)
-- [Development](#-development)
 - [Contributing](#-contributing)
 - [License](#-license)
+- [Acknowledgments](#-acknowledgments)
 
 ---
 
